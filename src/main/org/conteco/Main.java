@@ -9,6 +9,8 @@ public class Main {
                 = new ClassPathXmlApplicationContext("spring.xml");
 
         Doctor doctor = context.getBean(Doctor.class);
+        // Alternativ:
+        // Doctor doctor = (Doctor) context.getBean("doctor");
 
         doctor.assist();
     }
