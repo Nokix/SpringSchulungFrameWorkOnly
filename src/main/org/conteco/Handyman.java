@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 //@Primary
-@Qualifier("firstChoice")
-public class Nurse implements Staff{
+@Qualifier("secondChoice")
+public class Handyman implements Staff{
     @Override
     public void assist() {
-        System.out.println("Nurse is assisting.");
+        System.out.println("Handyman ist assisting.");
     }
 }
