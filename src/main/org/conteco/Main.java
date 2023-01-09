@@ -1,12 +1,13 @@
 package org.conteco;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.conteco.config.BeanConfig;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context
-                = new ClassPathXmlApplicationContext("spring.xml");
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext(BeanConfig.class);
 
         Doctor doctor = context.getBean(Doctor.class);
         // Alternativ:

@@ -8,28 +8,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class Doctor implements Staff {
 
-//    @Value("Phillip")
     private String name;
-
-//    @Autowired
-//    @Qualifier("nurse")
     private Staff staff;
 
-//    public Doctor(@Value("Franz") String name, @Qualifier("firstChoice") Staff staff) {
-//        this.name = name;
-//        this.staff = staff;
-//    }
-
-    @Value("Zaki")
-    public void setName(String name) {
+    public Doctor(@Autowired(required = false) @Qualifier("fullName") String name,
+                  @Qualifier("firstChoice") Staff staff) {
         this.name = name;
-    }
-
-    @Autowired
-    @Qualifier("nurse")
-    public void setStaff(Staff staff) {
         this.staff = staff;
     }
+
 
     @Override
     public void assist() {

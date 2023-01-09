@@ -14,5 +14,5 @@
 <!--    </bean>-->
 <!--    <bean id="nurse" class="org.conteco.Nurse"/>-->
 
-    <context:component-scan base-package="org.conteco"/>
+<!--    <context:component-scan base-package="org.conteco"/>-->
 </beans>
