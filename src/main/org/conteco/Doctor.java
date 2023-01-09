@@ -3,12 +3,12 @@ package org.conteco;
 public class Doctor {
     private Qualification qualification;
 
-    public Doctor() {
-        qualification = new Qualification("PHD");
+    public Doctor(Qualification qualification) {
+        this.qualification = qualification;
     }
 
     public void assist() {
-        System.out.println("Doctor with Qualification "
+        System.out.println("Doctor with qualification "
                 + qualification.getQualification() + " is assisting.");
     }
 }
