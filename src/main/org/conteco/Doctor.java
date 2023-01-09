@@ -1,17 +1,21 @@
 package org.conteco;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Doctor implements Staff {
     private String name;
-    private Nurse nurse;
+    private Staff staff;
 
-    public Doctor(String name, Nurse nurse) {
+    public Doctor(@Value("Franz") String name, Staff staff) {
         this.name = name;
-        this.nurse = nurse;
+        this.staff = staff;
     }
 
     @Override
     public void assist() {
         System.out.println("Doctor " + name + " is assisting.");
-        nurse.assist();
+        staff.assist();
     }
 }
