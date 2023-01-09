@@ -8,11 +8,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Doctor implements Staff {
 
-    @Value("Phillip")
+//    @Value("Phillip")
     private String name;
 
-    @Autowired
-    @Qualifier("nurse")
+//    @Autowired
+//    @Qualifier("nurse")
     private Staff staff;
 
 //    public Doctor(@Value("Franz") String name, @Qualifier("firstChoice") Staff staff) {
@@ -20,7 +20,16 @@ public class Doctor implements Staff {
 //        this.staff = staff;
 //    }
 
+    @Value("Zaki")
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    @Autowired
+    @Qualifier("nurse")
+    public void setStaff(Staff staff) {
+        this.staff = staff;
+    }
 
     @Override
     public void assist() {
