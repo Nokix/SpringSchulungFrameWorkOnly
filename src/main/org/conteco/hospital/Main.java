@@ -1,4 +1,4 @@
-package org.conteco;
+package org.conteco.hospital;
 
 import org.conteco.config.BeanConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

@@ -1,5 +1,6 @@
-package org.conteco;
+package org.conteco.hospital;
 
+import org.conteco.Staff;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

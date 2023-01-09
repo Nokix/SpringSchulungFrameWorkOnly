@@ -6,13 +6,13 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd">
-<!--    <bean id="doctor" class="org.conteco.Doctor">-->
+<!--    <bean id="doctor" class="org.conteco.hospital.Doctor">-->
 <!--        <property name="name" value="Karl"/>-->
 <!--        <property name="nurse" ref="nurse"/>-->
 <!--        <constructor-arg name="name" value="Gustav" />-->
 <!--        <constructor-arg name="nurse" ref="nurse"/>-->
 <!--    </bean>-->
-<!--    <bean id="nurse" class="org.conteco.Nurse"/>-->
+<!--    <bean id="nurse" class="org.conteco.hospital.Nurse"/>-->
 
 <!--    <context:component-scan base-package="org.conteco"/>-->
 </beans>

@@ -1,4 +1,4 @@
-package org.conteco;
+package org.conteco.hospital;
 
 public class Qualification {
     private String qualification;
