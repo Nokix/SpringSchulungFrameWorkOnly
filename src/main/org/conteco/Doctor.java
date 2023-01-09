@@ -1,18 +1,26 @@
 package org.conteco;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Doctor implements Staff {
+
+    @Value("Phillip")
     private String name;
+
+    @Autowired
+    @Qualifier("nurse")
     private Staff staff;
 
-    public Doctor(@Value("Franz") String name, @Qualifier("firstChoice") Staff staff) {
-        this.name = name;
-        this.staff = staff;
-    }
+//    public Doctor(@Value("Franz") String name, @Qualifier("firstChoice") Staff staff) {
+//        this.name = name;
+//        this.staff = staff;
+//    }
+
+
 
     @Override
     public void assist() {
