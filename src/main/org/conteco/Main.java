@@ -14,7 +14,7 @@ public class Main {
 
         doctor.assist();
 
-        Nurse nurse = context.getBean(Nurse.class);
-        nurse.assist();
+//        Nurse nurse = context.getBean(Nurse.class);
+//        nurse.assist();
     }
 }
