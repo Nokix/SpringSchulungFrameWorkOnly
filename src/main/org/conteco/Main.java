@@ -10,12 +10,14 @@ public class Main {
                 new AnnotationConfigApplicationContext(BeanConfig.class);
 
         Doctor doctor = context.getBean(Doctor.class);
-        // Alternativ:
-        // Doctor doctor = (Doctor) context.getBean("doctor");
+        System.out.println(doctor.getName());
+        doctor.setName("Sven Svenson");
+        System.out.println(doctor.getName());
 
-        doctor.assist();
+        Doctor doctor1 = context.getBean(Doctor.class);
+        System.out.println(doctor1.getName());
 
-//        Nurse nurse = context.getBean(Nurse.class);
-//        nurse.assist();
+        context.close();
+
     }
 }

@@ -11,13 +11,11 @@ import org.springframework.context.annotation.Primary;
 public class BeanConfig {
 
     @Bean
-    @Qualifier("fullName")
     public String firstName() {
         return "Karl";
     }
 
     @Bean
-    @Qualifier("fullName")
     public String lastName() {
         return "Karlson";
     }
