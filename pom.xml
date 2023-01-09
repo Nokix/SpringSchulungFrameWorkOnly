@@ -4,6 +4,10 @@
   <groupId>gmbh.conteco</groupId>
   <artifactId>SpringSchulungFrameWorkOnly</artifactId>
   <packaging>war</packaging>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
   <version>1.0-SNAPSHOT</version>
   <name>SpringSchulungFrameWorkOnly Maven Webapp</name>
   <url>http://maven.apache.org</url>
